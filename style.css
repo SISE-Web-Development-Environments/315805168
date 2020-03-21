@@ -72,3 +72,7 @@ table, th, td{
 #contact{
 	text-align: center;
 }
+#scan{
+	width: 200px;
+	height: 200px;
+}
