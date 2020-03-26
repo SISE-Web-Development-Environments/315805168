@@ -3,6 +3,22 @@ h2{
 	padding: 10px;
 	background-color: rgb(126, 221, 216);
 }
+.header::before{
+	content: "";
+	display: block;
+	width: 120px;
+	height: 2px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: -2;
+}
+
+#img3{
+	width: 70px;
+	height: 70px;
+	position: fixed;
+}
 
 body{
 	text-align: center;
