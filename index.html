@@ -7,9 +7,9 @@
 <meta name="keyworeds" content="shir cohen, web 1.0, web 2.0, web 3.0">
 <meta name="description" content="This the first web site in Web development environments course">
 </head>
-<body dir="rtl"  background="green">
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
+<body dir="rtl"  background="green">  
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
 <div id="menu">
   <div id = "logo">  </div>
   <div id = "nav">  
@@ -218,7 +218,6 @@ Karan Patel
 </strong>
 <br/>
 </section>
-
 <section id="contact" class="section">
 <br/>
 <br/>
@@ -232,18 +231,21 @@ Karan Patel
   </u>
 </strong>
 </h2>
-<form action="MAILTO:shir0@post.bgu.ac.il" method="POST" enctype="text/plain" autocomplete="on">
-שם: <br>
-<input id= "name" type= "text" name="user"/>
+<form action="MAILTO:shirshir05@walla.co.il?body=The%20subject%20of%20the%20mail" method="GET" enctype="text/plain" autocomplete="on">
+  שם: <br>
+<input type= "text" name="user"/>
 <br>
 איימל: <br>
 <input type= "email" name="mail"/>
 <br>
-תגובה: <br>
-<input id= "mytext" type= "text" name="comment" size="50%" />
 <br>
-<input type= "submit" value = "שלח"/>
-<input type= "Reset" value = "מחק"/>
+נושא המייל: <br>
+<input type= "text" name="subject" id="subject"/>
+<br>
+תגובה: <br>
+<input  id= "body" type= "text" name="body" size="50%"/>
+<br>
+<button id ="send" type= "submit" value="Send" >שלח</button>
 </form>
 <br/>
 <br/>
@@ -258,16 +260,18 @@ $(function(){
   });
 });
 </script>
+
 <script type="text/javascript">
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
- <link href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css" rel="stylesheet"> </link>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.3.1/emojionearea.min.css" rel="stylesheet"> </link>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.3.1/emojionearea.min.js"></script>
+
  <script>
-  $("#mytext").emojioneArea({
+  $("#body").emojioneArea({
     pickerPosition: "center",
   });
 </script>
